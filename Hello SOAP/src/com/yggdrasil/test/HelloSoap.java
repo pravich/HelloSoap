@@ -4,7 +4,11 @@ import javax.jws.WebService;
 
 @WebService
 public class HelloSoap {
-	public String Hello(String name) {
+	public String hello(String name) {
 		return("Hello, " + name + "!");
+	}
+	
+	public String echo(String word) {
+		return(word);
 	}
 }
